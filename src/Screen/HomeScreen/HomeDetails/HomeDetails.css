@@ -1,0 +1,102 @@
+.HomeDetails {
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: rgb(238, 235, 235);
+}
+
+/* Card container */
+.HomeDetailsLongCard {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.HomeDetailsLongCardTitle {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* 🚀 Only the ScrollDiv should scroll */
+.HomeDetailsLongCardItems {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden; /* hide scrollbar background */
+}
+
+/* The scrollable row */
+.ScrollDiv {
+  display: flex;
+  flex-wrap: nowrap;       /* ensures one row */
+  gap: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ScrollDiv::-webkit-scrollbar {
+  height: 8px;
+}
+.ScrollDiv::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* The product cards */
+.HomeDetailsLongCardItem {
+  flex: 0 0 180px; /* <— FIXED WIDTH prevents squish */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.HomeDetailsLongCardItemImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.HomeDetailsLongCardItemImageDetail {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.HomeDetailLongCardItemImageTopDetail {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.HomeDetailPercentageOff {
+  padding: 4px 6px;
+  background-color: #CC0C39;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
+  color: white;
+}
+
+.LimitedTimeDeal {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.BottomDetail {
+  font-size: 12px;
+  padding: 4px 0;
+}

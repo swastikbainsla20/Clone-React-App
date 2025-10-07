@@ -1,0 +1,38 @@
+.Footer {
+    color: white;
+    background-color: black;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;   /* stack columns and logo vertically */
+    align-items: center;      /* center horizontally */
+}
+
+.FooterContent {
+    display: flex;            /* horizontal layout for columns */
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;          /* wrap on smaller screens */
+}
+
+.FooterColumn {
+    display: flex;
+    flex-direction: column;   /* stack title + links vertically */
+}
+
+.ContentFooterTitle {
+    font-weight: 600;
+}
+
+.ContentFooterSubtitleDiv {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.AmazonImage {
+    margin-top: 40px;         /* logo below footer content */
+}
+
+.AmazonImgFooter {
+    width: 110px;
+    height: auto;
+}
